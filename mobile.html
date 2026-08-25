@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Desktop Redirect Script -->
+    <script>
+        (function() {
+            const isDesktop = window.innerWidth > 768 
+                           && !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+            
+            if (isDesktop && !window.location.pathname.includes('index.html')) {
+                window.location.href = 'index.html';
+            }
+        })();
+    </script>
+    <script src="https://cdn-in.pagesense.io/js/simonerileyscompany/15d761a44b7140b5afca73c8146e4215.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Intractive book mobile</title>
+    <link rel="icon" type="image/x-icon" href="fac_ico_link">
+    <link rel="stylesheet" href="mobile.css">
+</head>
+<body>
+    <!-- Mobile Welcome Message Overlay -->
+    <div class="mobile-welcome-overlay" id="mobileWelcome">
+        <div class="mobile-welcome-content">
+            <h2>📖 Welcome to Intractive Book</h2>
+            <div class="welcome-instructions">
+                <div class="instruction-item">
+                    <span class="instruction-icon">📖</span>
+                    <p><strong>Scroll</strong> to read the chapters</p>
+                </div>
+                <div class="instruction-item">
+                    <span class="instruction-icon">☰</span>
+                    <p>Use the <strong>menu button</strong> (top left) to navigate</p>
+                </div>
+                <div class="instruction-item">
+                    <span class="instruction-icon">⭐</span>
+                    <p><strong>Rate chapters</strong> at the end of each story</p>
+                </div>
+            </div>
+            <button class="got-it-btn" id="gotItBtn">Got it! Let's Read →</button>
+        </div>
+    </div>
+
+    <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- Scroll to Bottom Button -->
+    <button class="scroll-to-bottom-btn" id="scrollToBottomBtn" title="Scroll to Bottom">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 5v14M19 12l-7 7-7-7"/>
+        </svg>
+    </button>
+
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="novel-box">
+                <img src="Logo Image" alt="Logo" class="novel-logo">
+                <h1>Intractive Book</h1>
+            </div>
+        </div>
+        
+        <div class="sidebar-content">
+            <!-- User info will be injected here by JS -->
+            
+            <div class="sidebar-section">
+                <h3>Chapters</h3>
+                <div id="chapterNav">
+                    <a href="#chapter-1" class="nav-link">Chapter 1: Chapter Name</a>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <div class="main-content">
+        <img src="CoveImageLink" alt="" class="cover-image">
+        
+        <h1 class="header-title">Intractive Book by Aathithyan</h1>
+
+                <!-- Chapter 1 -->
+        <div class="chapter" id="chapter-1" data-chapter-id="chapterID_get_this_from_the_rowid_from_Database">
+          <!-- This is a exmaple of how content should be put in -->
+            <h2>Chapter 1: Something in the Air</h2>
+            
+            <p><strong>Monday mornings at CodeCraft Systems always began slowly.</strong> Computers hummed, coffee machines hissed, and people drifted in one by one. The smell of coffee mixed with the quiet rhythm of typing, filling the office with a familiar calm.</p>
+            
+            <img src="imglink" alt="Office Morning">
+            
+           
+            
+            <div class="song-lyrics">
+                <em>Uh, summa-lumma, dooma-lumma, you assumin' I'm a human,<br>What I gotta do to get it through to you? I'm superhuman<br>Innovative and I'm made of rubber so that anythin' you say is ricochetin' off of me, and it'll glue to you and....</em>
+            </div>
+            
+            
+            
+            
+            <div class="post-date">
+                <span class="date">July 21, 2025</span>
+                <span class="author">Written by: Aathithyan</span>
+            </div>
+
+            <div class="rating-placeholder" data-chapter="chapterID_get_this_from_the_rowid_from_Database"></div>
+        </div>
+    </div>
+
+    <script src="bookContent.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
